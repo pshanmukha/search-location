@@ -38,8 +38,6 @@ const Map = ({ place }: MapProps) => {
       ref={mapRef}
       center={[13.1224253, 77.6187995]}
       zoom={12}
-      minZoom={2}
-      maxZoom={18}
       scrollWheelZoom
       className="h-full"
     >
