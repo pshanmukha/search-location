@@ -10,6 +10,7 @@ This project is an interactive map application built with modern web development
 
 - **React:** A JavaScript library for building user interfaces.
 - **TypeScript:** A superset of JavaScript that adds static types.
+- **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
 - **Leaflet:** An open-source JavaScript library for mobile-friendly interactive maps.
 - **React-Leaflet:** Integration of Leaflet maps into React applications.
 - **GitHub Pages:** Free hosting for personal and project websites.
