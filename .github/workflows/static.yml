@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Node
-        uses: actions/checkou@#v4
+        uses: actions/checkout@#v4
         with: 
           node-version: 18
           cache: 'npm'
