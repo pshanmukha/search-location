@@ -69,7 +69,7 @@ const LocationSearch = ({ onPlaceClick, onError }: LocationSearchProps) => {
 
           {isLoading && (
             <div className="absolute inset-y-0 right-0 flex items-center px-2">
-              <CircularProgress size={20} />
+              <CircularProgress size={24} />
             </div>
           )}
 
@@ -80,7 +80,7 @@ const LocationSearch = ({ onPlaceClick, onError }: LocationSearchProps) => {
                 type="submit"
                 className="absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 hover:text-gray-700"
               >
-                <RiSearchLine />
+                <RiSearchLine size={24} />
               </button>
             )}
 
@@ -93,7 +93,7 @@ const LocationSearch = ({ onPlaceClick, onError }: LocationSearchProps) => {
                 onClick={() => handleClear()}
                 className="absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 hover:text-gray-700"
               >
-                <RiCloseLine />
+                <RiCloseLine size={24} />
               </button>
             )}
         </div>

@@ -1,7 +1,7 @@
 import type { Place } from "../api/Place";
 import "leaflet/dist/leaflet.css";
 import L, { Map as LeafletMap } from "leaflet";
-import { MapContainer, TileLayer, Marker } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, ZoomControl } from "react-leaflet";
 import { useEffect, useRef } from "react";
 //marker images
 import iconUrl from "leaflet/dist/images/marker-icon.png";
@@ -40,12 +40,14 @@ const Map = ({ place }: MapProps) => {
       zoom={12}
       scrollWheelZoom
       className="h-full"
+      zoomControl={false}
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
       {place && <Marker position={[place.latitude, place.longitude]} />}
+      <ZoomControl position="bottomright" />
     </MapContainer>
   );
 };
